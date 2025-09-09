@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "502834165813",
+    "project_id": "produceperfect-8b5ee",
+    "storage_bucket": "produceperfect-8b5ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502834165813:android:8e831b52f2b1658ce6997c",
+        "android_client_info": {
+          "package_name": "com.produceperfect.app.produce_perfect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502834165813-7a64ub26cah4r3m6o29rpbuu2m0ib2ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXhc3_TD5x3tQ-DguLnphl5mi9BjeT3Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502834165813-7a64ub26cah4r3m6o29rpbuu2m0ib2ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
