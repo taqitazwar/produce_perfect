@@ -4,7 +4,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapsService {
-  static const String _apiKey = 'AIzaSyDW7fSRAERAoO91N3-nyeKrrBBWEwYkR4Q';
+  // Supply your Google Maps API key here. See docs/SETUP.md.
+  static const String _apiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
   static const String _baseUrl = 'https://maps.googleapis.com/maps/api';
 
   // Calculate distance between two points using Google Maps Distance Matrix API

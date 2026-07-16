@@ -403,7 +403,7 @@ class _FarmerProfileScreenState extends State<FarmerProfileScreen> {
                           AppConstants.primaryColor,
                         ),
                         _buildStatCard(
-                          '💰 Estimated Earnings',
+                          'Estimated Earnings',
                           '\$${stats['totalEarnings'].toStringAsFixed(0)}',
                           Colors.orange,
                         ),

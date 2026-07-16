@@ -375,17 +375,17 @@ class _RiderProfileScreenState extends State<RiderProfileScreen> {
                           Colors.blue,
                         ),
                         _buildStatCard(
-                          '💰 Earned',
+                          'Earned',
                           '\$${(_stats['totalEarnings'] ?? 0.0).toStringAsFixed(0)}',
                           AppConstants.primaryColor,
                         ),
                         _buildStatCard(
-                          '🌱 Food Saved',
+                          'Food Saved',
                           '${(_stats['vegetablesSaved'] ?? 0.0).toStringAsFixed(1)} kg',
                           Colors.green,
                         ),
                         _buildStatCard(
-                          '🌍 Carbon Saved',
+                          'Carbon Saved',
                           '${(_stats['carbonSaved'] ?? 0.0).toStringAsFixed(1)} kg CO₂',
                           Colors.teal,
                         ),

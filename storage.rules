@@ -1,0 +1,26 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Product images: anyone can view them (for browsing), but only the owning
+    // farmer can upload, and uploads are limited to images under 5 MB.
+    match /products/{farmerId}/{imageId} {
+      allow read: if true;
+      allow write: if request.auth != null &&
+        request.auth.uid == farmerId &&
+        request.resource.size < 5 * 1024 * 1024 &&
+        request.resource.contentType.matches('image/.*');
+    }
+
+    // Profile images: publicly readable, writable only by the owner and limited
+    // to images under 2 MB.
+    match /profiles/{userId}/{imageId} {
+      allow read: if true;
+      allow write: if request.auth != null &&
+        request.auth.uid == userId &&
+        request.resource.size < 2 * 1024 * 1024 &&
+        request.resource.contentType.matches('image/.*');
+    }
+  }
+}

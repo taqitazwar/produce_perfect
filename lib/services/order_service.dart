@@ -429,7 +429,7 @@ class OrderService {
       
       for (var doc in snapshot.docs) {
         final data = doc.data();
-        print('📄 Order ${doc.id}:');
+        print('Order ${doc.id}:');
         print('   - status: ${data['status']}');
         print('   - riderId: ${data['riderId']}');
         print('   - farmerId: ${data['farmerId']}');

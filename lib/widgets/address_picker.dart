@@ -88,7 +88,7 @@ class _AddressPickerState extends State<AddressPicker> {
     return GooglePlaceAutoCompleteTextField(
       textEditingController: _controller,
       focusNode: _focusNode,
-      googleAPIKey: "AIzaSyDW7fSRAERAoO91N3-nyeKrrBBWEwYkR4Q",
+      googleAPIKey: "YOUR_GOOGLE_MAPS_API_KEY",
       inputDecoration: InputDecoration(
         labelText: widget.label + (widget.isRequired ? ' *' : ''),
         hintText: 'Enter ${widget.label.toLowerCase()}',
